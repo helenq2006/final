@@ -1,0 +1,103 @@
+/* heading */
+h1 {
+font-size: 50px;
+text-align: center;
+background-color: lightpink;
+padding: 10px;
+border-radius: 20px;
+}
+
+/* nav bar */
+.navbar {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+  }
+
+  a {
+    background-color:lightblue;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  li a:hover {
+    background-color:rgb(173, 202, 230);
+  }
+
+  #name {
+    text-align: right;
+  }
+
+  .page1subhead {
+    font-size: 30px;
+  }
+
+  .page2subhead {
+    font-size: 30px;
+  }
+
+  .subsub {
+    font-size: 25px;
+  }
+
+  .paragraph {
+    background-color:lightblue;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  @media (max-width: 1080px) {
+    .paragraph-container {
+        width: 90%;
+    }
+  }
+
+  #left {
+    background-color: lightgray;
+    border-radius: 20px;
+  }
+
+  #right {
+    background-color: lightgray;
+    border-radius: 20px;
+  }
+
+  #left, #right {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  #container {
+    justify-content: space-between;
+    clear: both;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+  }
+
+#page3para {
+    background-color:lightgray;
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    clear:both;
+    padding: 130px;
+}
