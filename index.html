@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Beginner's Guide to JS</h1>
 
-    <!--nav bar-->
-<h2 class="navbar">
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="structures.html">Basic Structures</a></li>
-    <li><a href="vocab.html">Vocab & Concepts</a></li>
-</ul>
-</h2>
-<p id="name">By: Helen Qiu</p>
-<br> <br>
-<h3 class="page1subhead">What is Javascript?</h3>
-<p class="paragraph">Javascript is a programming language that allows complex features to display on web pages.
-    It allows you to create content which updates dynamically, animate graphics, and so much more.
-    It allows for webpages to do more than display static information and change HTML content.
-    The core client side of JS allows programming features such as storing useful values inside variables,
-    operations on pieces of text, and running code in response to events on a webpage.
-    Javascript is generally run from top to botton, and can be linked to an HTML page internally or externally.
+    <!-- nav bar -->
+    <h2 class="navbar">
+        <ul class="navul">
+            <li class="navli"><a href="index.html">Home</a></li>
+            <li class="navli"><a href="structures.html">Basic Structures</a></li>
+            <li class="navli"><a href="vocab.html">Vocab & Concepts</a></li>
+        </ul>
+    </h2>
 
+    <p id="name">By: Helen Qiu</p>
+    <br> <br>
+    <h3 class="page1subhead">What is Javascript?</h3>
+    <p class="paragraph" id="introText">JavaScript is a programming language that allows complex features to display on web pages.
+        It allows you to create content which updates dynamically, animate graphics, and so much more.
 
+        <span id="additionalText" style="display: none;">
+            It allows for webpages to do more than display static information and change HTML content.
+        The core client side of JS allows programming features such as storing useful values inside variables,
+        operations on pieces of text, and running code in response to events on a webpage.
+        JavaScript is generally run from top to bottom, and can be linked to an HTML page internally or externally.
+            It's a versatile language used for both client-side and server-side development.
+            JavaScript is commonly used in conjunction with HTML and CSS to build interactive and dynamic websites.
+            Asynchronous JavaScript (AJAX) allows data to be retrieved from a server without refreshing the entire page.
+        </span>
+    </p>
 
-</p>
+    <button onclick="toggleAdditionalText()">Read more</button>
 
-<h4 class="page1subhead">Sources/Additional Info</h4>
-<p>
-    <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Mozilla</a>
-    <br>
-    <a href="https://www.w3schools.com/whatis/whatis_js.asp">W3Schools</a>
-</p>
+    <h4 class="page1subhead">Sources/Additional Info</h4>
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Mozilla</a>
+        <br>
+        <a href="https://www.w3schools.com/whatis/whatis_js.asp">W3Schools</a>
+    </p>
 
 </body>
 </html>
