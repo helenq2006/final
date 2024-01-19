@@ -125,4 +125,13 @@ button:hover {
   background-color:palevioletred;
 }
 
+.code {
+  font-size: 15px;
+  color:blueviolet;
+}
+
+.word {
+  font-weight: bold;
+}
+
 

@@ -28,15 +28,14 @@
     many times without having to rewrite the same code. A function can pass data that is operated and return the data.
     Javascript includes functions such as getElementById(), which returns the element object whose id property matches the specified
     string in the parenthesis. For example, if you were to have a h1 tag with the id header in HTML, here is how it would be called in JS:
+    <div class="code"> &lt;h1 id="header"&gt;Hello&lt;/h1&gt;
     <br>
-    &lt;h1 id="header"&gt;Hello&lt;/h1&gt;
-    <br>
-    &lt;script&gt; <br>
+   &lt;script&gt; <br>
     function exampleFunct() { <br>
         const var = document.getElementById("header"); <br>
         *xyz code* <br>
     } <br>
-    &lt;/script&gt;
+    &lt;/script&gt; </div>
 </p>
 <p> <div class="subsub">Variables</div>
     <br>
@@ -45,11 +44,11 @@
     have to be defined then initialized. Lets say I want to create a variable which
     contains my name. I would declare it as name, then set the value to a string Helen.
     <br>
-    let name = "Helen"; <br>
+   <div class="code">let name = "Helen"; </div> <br>
     If I wanted to redeclare the variable to a different value, such as change the name, I would do this:
     <br>
-    let name = "Helen"; <br>
-    name = "Camila";
+   <div class="code"> let name = "Helen"; <br>
+    name = "Camila"; </div>
     <br>
     Although you can technically name a variable whatever you like, there are general conventions, such as
     only using numbers letters and underscores, camelCase for multiple words, don't start with numbers. 
@@ -62,10 +61,10 @@
         An object is a collection of related data, which usually consists of variables and functions.
         Creating an object usually begins with defining anf initializing a variable.
         <br>
-        const pet = []; <br>
+        <div class="code">const pet = [];</div><br>
         Since this is an empty object, let's fill it with information.
         <br>
-        const pet = { <br>
+        <div class="code"> const pet = { <br>
             type: ["Dog"], <br>
             name: ["Max"], <br>
             age: 2, <br>
@@ -75,14 +74,14 @@
             introduceSelf: function() { <br>
                 console.log(`Hi! I'm ${this.name}. I am a ${this.type}.) <br>
             }; <br>
-        }; <br>
+        }; </div><br>
         <br>
         When run, here is what should show up in the console: <br>
-        pet.name; // "Max" <br>
+        <div class="code">pet.name; // "Max" <br>
         pet.type; // "Dog" <br>
         pet.age; // "2"; <br>
         pet.bio(); // "Max is 2 years old." <br>
-        pet.introduceSelf(): // "Hi! I'm Max. I am a Dog." <br>
+        pet.introduceSelf(): // "Hi! I'm Max. I am a Dog." </div><br>
     </p>
 </div>
 
@@ -91,41 +90,40 @@
 <p>
     In order to give an HTML element a unique identity, we can use the id attribute to assign it a unique operative word.
     <br> For example, let's say you have a button and want to display text to show the user it has been clicked.
-    <br>
-    &lt;body onload = "initialize();"&gt; <br>
+    <div class="code">&lt;body onload = "initialize();"&gt; <br>
     &lt;div&gt; <br>
     You have not clicked the button. <br>
     &lt;/div&gt; <br> <br>
     &lt;button&gt;Click Me!&lt;/button&gt; <br>
-    &lt;/body&gt; <br>
+    &lt;/body&gt; </div><br>
     First, we will need to add an id to the first div that surrounds the text we want to change. <br>
-    &lt;div id = "firstdiv" &gt; <br>
+    <div class="code">&lt;div id = "firstdiv" &gt; <br>
     You have not clicked the button. <br>
-    &lt;/div&gt; <br> <br>
+    &lt;/div&gt; </div><br> <br>
     This id named firstdiv will represent the text, and we will then need to use that for the javascript part. <br>
-    In the script, write the code for the initialize function. <br> <br>
-    &lt;script&gt; <br>
+    In the script, write the code for the initialize function. <br>
+    <div class="code">&lt;script&gt; <br>
     function initialize() <br>
     { <br>
         outputDiv = document.getElementById("firstdiv"); <br>
     } <br>
-    &lt;/script&gt; <br> <br>
+    &lt;/script&gt;</div> <br>
     The left side of the assignment operator is a variable, and the right side is value.
     In this case, it will return the element matching the id of firstdiv. <br>
-    We then need to write the function which changes the text when the button is clicked. <br> <br>
-    function clickResponse() <br>
+    We then need to write the function which changes the text when the button is clicked.
+    <div class="code">function clickResponse() <br>
     { <br>
         outputDiv.innerHTML = "The button has been clicked." <br>
-    } <br> <br>
+    }</div> <br> <br>
     This line of code accesses the innerHTML with the variable outputDiv and assign it with 
     the text property such as The button has been clicked. <br>
     Now, add the onclick event to the button and call the clickResponse function in the HTML. <br>
-    &lt;body onload = "initialize();"&gt; <br>
+    <div class="code">&lt;body onload = "initialize();"&gt; <br>
     &lt;div&gt; <br>
     You have not clicked the button. <br>
     &lt;/div&gt; <br>
     &lt;button onclick = "clickResponse():">Click Me!&lt;/button&gt; <br>
-    &lt;/body&gt; <br>
+    &lt;/body&gt; </div><br>
     Now when the button is clicked, the text should change from "You have not clicked the button." to "The button has been clicked." <br>
 </p>
 </div>
